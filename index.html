@@ -27,17 +27,17 @@
                     <a href="#home">Home</a> 
                 </li>
                   <li> 
-                    <a href="#trending">Em alta</a> 
+                    <a href="#trending">Momentos</a> 
                 </li>  <li> 
-                    <a href="#about">Sobre Nós</a> 
+                    <a href="#about">Me Lembram você</a> 
                 </li>
                   <li> 
-                    <a href="#products">Produtos</a> 
+                    <a href="#products">O Futuro</a> 
                 </li>
             </ul>
-            <a href="#" class="btn btn-default">
-                Contatar
-            </a>
+            <!-- <a href="#" class="btn btn-default">
+                Começar
+            </a> -->
         </nav>
     </header>
 <!--MAIN-->
@@ -60,14 +60,9 @@
                 Ao <span>Seu</span> lado, realmente sinto que encontrei algo único e precioso. 
 
                 <div class="contador">
-                <h3>Relationship Uptime:</h3>
+                <h3>Contando sempre os dias</h3>
                 <div id="timer">00d 00h 00m 00s</div>
                 </div>
-            <!-- <div class="home-actions">
-                <a href="#" class="btn btn-default">
-                    
-                </a>
-            </div> -->
     </section>
 </main>
         <div class="Momentos">Meus Momentos Favoritos</div>
@@ -80,10 +75,121 @@
                 <div class="moment-item"><div class="moment-photo" style="background-image: url('src/css/images/AnoNovoCoracao.png')"></div><p class="moment-caption">Nosso Primeiro Ano Novo.</p></div>
                 <div class="moment-item"><div class="moment-photo" style="background-image: url('src/css/images/NatalHabblet.png')"></div><p class="moment-caption">Nosso Primeiro Natal.</p></div>
                 <div class="moment-item"><div class="moment-photo" style="background-image: url('src/css/images/Maninha&Ele.gif')"></div><p class="moment-caption">Todos os momentos com vocês dois juntos.</p></div>
-                <div class="moment-item"><div class="moment-photo" style="background-image: url('src/css/images/Player1.jpeg')"></div><p class="moment-caption">Sempre sendo seu Player 2</p></div>
+                <div class="moment-item"><div class="moment-photo" style="background-image: url('src/css/images/Player2.jpeg')"></div><p class="moment-caption">Sempre sendo seu Player 2</p></div>
+                
             </div>
         </div>
         </section>
-    <script src="src/js/script.js"></script>
+        <section class="reminders">
+        <h2 style="text-align: center;">Coisas que me lembram você</h2>
+        <div class="reminders-grid">
+            <div class="reminder-card"><img id="mini" src="src/css/images/terraria.png" alt="terraria"><br>Terraria</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/minebloco.png" alt="Minecraft"><br>Minecraft</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/brat.png" alt="Brat"><br>Brat</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/tarot.png" alt="Tarot"><br>Tarot</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/ladygaga.png" alt="Lady Gaga"><br>Lady Gaga</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/habbo.png" alt="Habbo"><br>Habblet</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/plantas.png" alt="plantas"><br>Plantas</div>
+            <div class="reminder-card"><img id="mini" src="src/css/images/cadeado.png" alt="cadeado"><br>IYKYK...</div>
+        </div>
+    </section>
+    <section class="future">
+        <h2 style="text-align: center;">O Futuro</h2>
+        <p style="text-align: center;">Mal posso esperar para criar mais memórias incríveis juntos. Ao seu lado, realmente sinto que encontrei algo único e precioso. O futuro é brilhante, e estou animado para compartilhá-lo com você.</p>
+        <div class="bubbles-container">
+        <!-- Bolha 1 -->
+        <div class="bubble" style="--i:1; background-image: url('src/css/images/Bolha0.gif');">
+            <span class="bubble-text">Nosso Início</span>
+        </div>
+        <!-- Bolha 2 -->
+        <div class="bubble" style="--i:2; background-image: url('src/css/images/Bolha2.gif');">
+            <span class="bubble-text">Risadas</span>
+        </div>
+        <!-- Bolha 3 -->
+        <div class="bubble" style="--i:3; background-image: url('src/css/images/Bolha3.gif');">
+            <span class="bubble-text">Cumplicidade</span>
+        </div>
+        <!-- Bolha 4 -->
+        <div class="bubble" style="--i:4; background-image: url('src/css/images/Bolha4.gif');">
+            <span class="bubble-text">Aventuras</span>
+        </div>
+           <!-- Bolha 5 -->
+        <div class="bubble" style="--i:5; background-image: url('src/css/images/Bolha5.gif');">
+            <span class="bubble-text">Aventuras</span>
+        </div>
+           <!-- Bolha 6 -->
+        <div class="bubble" style="--i:6; background-image: url('src/css/images/Bolha6.gif');">
+            <span class="bubble-text">Aventuras</span>
+        </div>
+           <!-- Bolha 7 -->
+        <div class="bubble" style="--i:7; background-image: url('src/css/images/Bolha7.gif');">
+            <span class="bubble-text">Aventuras</span>
+        </div>
+           <!-- Bolha 8 -->
+        <div class="bubble" style="--i:8; background-image: url('src/css/images/Bolha8.gif');">
+            <span class="bubble-text">Aventuras</span>
+        </div>
+        <!-- Adicione quantas bolhas quiser -->
+    </div>
+</section>
+    </section>
+    <!-- Player -->
+    <div id="music-player">
+        <audio id="musica" loop><source src="sua-musica.mp3" type="audio/mpeg"></audio>
+        <button id="btn-play" onclick="toggleMusic()">🎵</button>
+    </div>
+    <script>
+        // 1. Lógica do Contador
+        const dataInicio = new Date("2025-11-19T13:48:00").getTime();
+        setInterval(() => {
+            const agora = new Date().getTime();
+            const diff = agora - dataInicio;
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((diff % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerText = `${d}d ${h}h ${m}m ${s}s`;
+        }, 1000);
+
+        // 2. Carrossel Automático
+const track = document.getElementById('track');
+const itens = document.querySelectorAll('.moment-item');
+let index = 0;
+
+function moverCarrossel() {
+    index++;
+
+    // Se chegar ao último item, volta para o primeiro
+    if (index >= itens.length - 1) { 
+        index = 0;
+    }
+
+    // Calcula quanto deve mover (largura do item + margem)
+    const larguraItem = itens[0].offsetWidth + 20; 
+    track.style.transform = `translateX(-${index * larguraItem}px)`;
+}
+
+// Define o intervalo de 3 segundos (3000 milissegundos)
+let carrosselAutomatico = setInterval(moverCarrossel, 3000);
+
+// Pausa o carrossel se ele passar o mouse por cima (para ler a legenda)
+track.addEventListener('mouseenter', () => clearInterval(carrosselAutomatico));
+
+// Retoma quando o mouse sai
+track.addEventListener('mouseleave', () => {
+    carrosselAutomatico = setInterval(moverCarrossel, 3000);
+});
+        // 3. Música
+        const musica = document.getElementById('musica');
+        function toggleMusic() {
+            if (musica.paused) { musica.play(); document.getElementById('btn-play').innerText = '⏸️'; }
+            else { musica.pause(); document.getElementById('btn-play').innerText = '🎵'; }
+        }
+        document.addEventListener('click', () => { 
+            if(musica.paused) toggleMusic(); }, {once: true});
+    </script>
 </body>
+<footer class="rodape">
+    <p> Feito com ❤️<span class="secreto"></span></p>
+</footer>
 </html>
